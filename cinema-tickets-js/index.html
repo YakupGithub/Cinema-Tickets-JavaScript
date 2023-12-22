@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto+Condensed:wght@800&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h>Film ve Saat Seçiniz...</h>
+        <div class="movies">
+            <div class="movie wonka" value="150"></div>
+            <div class="movie barbie" value="80"></div>
+            <div class="movie oppenheimer" value="120"></div>
+        </div>
+    </div>
+    <div class="date">
+        <div class="time">
+            <div class="hour">13:50</div>
+            <div class="hour">17.30</div>
+            <div class="hour">21:00</div>
+        </div>
+        <div class="time">
+            <div class="hour">10:30</div>
+            <div class="hour">15:00</div>
+            <div class="hour">18:30</div>
+        </div>
+        <div class="time">
+            <div class="hour">12:00</div>
+            <div class="hour">16:30</div>
+            <div class="hour">20.00</div>
+        </div>
+    </div>
+    <div class="time-header">
+        <h>Koltuk Seçiniz...</h>
+    </div>
+    <div class="seat-container">
+        <div class="container">
+            <div class="screen"><p>S A H N E</p></div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+                <div class="seat reserved"></div>
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <ul class="info">
+            <li>
+                <div class="seat-info selected"></div>
+                <span>Seçili</span>
+            </li>
+            <li>
+                <div class="seat-info"></div>
+                <span>Boş</span>
+            </li>
+            <li>
+                <div class="seat-info reserved"></div>
+                <span>Dolu</span>
+            </li>
+        </ul>
+        </div>
+        <p class="text">
+            <span id="count ">3</span> kişi için ödeyeceğiniz tutar <span id="amount">270</span>₺
+        </p>
+    <script src="app.js"></script>
+</body>
+</html>
