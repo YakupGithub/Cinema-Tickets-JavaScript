@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto+Condensed:wght@800&family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h>Film ve Saat Seçiniz...</h>
-        <div class="movies">
-            <div class="movie wonka" value="150"></div>
-            <div class="movie barbie" value="80"></div>
-            <div class="movie oppenheimer" value="120"></div>
+    <header class="header">
+        <h1>Film ve Saat Seçiniz...</h1>
+        <div id="movie" class="movies">
+            <div class="movie wonka" value="150">
+                <div class="time">
+                    <div class="hour">13:50</div>
+                    <div class="hour">17.30</div>
+                    <div class="hour">21:00</div>
+                </div>
+            </div>
+            <div class="movie barbie" value="80">
+                <div class="time">
+                    <div class="hour">10:30</div>
+                    <div class="hour">15:00</div>
+                    <div class="hour">18:30</div>
+                </div>
+            </div>
+            <div class="movie oppenheimer" value="120">
+                <div class="time">
+                    <div class="hour">12:00</div>
+                    <div class="hour">16:30</div>
+                    <div class="hour">20.00</div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="date">
-        <div class="time">
-            <div class="hour">13:50</div>
-            <div class="hour">17.30</div>
-            <div class="hour">21:00</div>
-        </div>
-        <div class="time">
-            <div class="hour">10:30</div>
-            <div class="hour">15:00</div>
-            <div class="hour">18:30</div>
-        </div>
-        <div class="time">
-            <div class="hour">12:00</div>
-            <div class="hour">16:30</div>
-            <div class="hour">20.00</div>
-        </div>
-    </div>
+    </header>  
     <div class="time-header">
-        <h>Koltuk Seçiniz...</h>
+        <h1>Koltuk Seçiniz...</h1>
     </div>
     <div class="seat-container">
         <div class="container">
@@ -114,7 +109,7 @@
         </ul>
         </div>
         <p class="text">
-            <span id="count ">3</span> kişi için ödeyeceğiniz tutar <span id="amount">270</span>₺
+            <span id="count">0</span>&nbsp;kişi için ödeyeceğiniz tutar&nbsp;<span id="amount">0</span>₺
         </p>
     <script src="app.js"></script>
 </body>

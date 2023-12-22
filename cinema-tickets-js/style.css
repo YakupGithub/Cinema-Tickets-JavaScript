@@ -9,11 +9,7 @@ body {
     font-family: "Poppins";
 }
 
-.header {
-    margin-top: 50px;
-    font-size: 30px;
-    align-items: start;
-}
+.header h1{ margin: 30px; }
 
 .movies {
     display: flex;
@@ -29,11 +25,15 @@ body {
     border: 3px solid black;
     transition: transform 0.3s ease;
     border-radius: 7.5px;
+    flex: 0 1 calc(33.33% - 60px); /* 3 film yan yana */
 }
 
-.movie:hover {
+.movie.selected {
+    border: 3px solid gold; 
     transform: scale(1.1);
 }
+
+.movie:hover { transform: scale(1.1); }
 
 .wonka {
     background-image: url(images/wonka.jpeg);
@@ -50,16 +50,22 @@ body {
     background-size: cover;
 }
 
-.date {
-    display: flex;
-    margin-bottom: 100px;
-}
-
 .time {
     display: flex;
-    margin-left: 55px;
-    margin-right: 55px;
+    justify-content: center;
+    margin-top: 420px;
 }
+
+.time-header { margin-top: 150px; }
+
+.text {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.text span { color: gold; }
 
 .hour {
     font-family: "Rubik";
@@ -73,10 +79,12 @@ body {
     color: black;
 }
 
-.time-header {
-    font-size: 40px;
-    margin-bottom: 30px;
+.hour:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
+
+.hour.selected { background-color: gold; }
 
 .seat {
     background-color: darkgreen;
@@ -84,14 +92,6 @@ body {
     height: 45px;
     margin: 5px;
     border-radius: 5px;
-}
-
-.deneme p {
-    color: black;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .seat-container {
@@ -102,38 +102,26 @@ body {
     border-radius: 30px;
 }
 
-.seat.selected {
-    background-color: darkgoldenrod;
-}
+.seat-container p { font-size: 5px; }
 
-.seat.reserved {
-    background-color: darkred;
-}
+.seat.selected { background-color: darkgoldenrod; }
 
-.seat-info.selected {
-    background-color: darkgoldenrod;
-}
+.seat.reserved { background-color: darkred; }
 
-.seat-info.reserved {
-    background-color: darkred;
-}
+.seat-info.selected { background-color: darkgoldenrod; }
 
-.seat:nth-of-type(2) {
-    margin-right: 35px;
-}
+.seat-info.reserved { background-color: darkred; }
 
-.seat:nth-last-of-type(2) {
-    margin-left: 35px;
-}
+.seat:nth-of-type(2) { margin-right: 35px; }
+
+.seat:nth-last-of-type(2) { margin-left: 35px; }
 
 .seat:not(.reserved):hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.row {
-    display: flex;
-}
+.row { display: flex; }
 
 .screen {
     color: black;
@@ -152,6 +140,7 @@ body {
 }
 
 .info {
+    font-size: 18px;
     font-family: "Rubik";
     display: flex;
     justify-content: center;
@@ -161,13 +150,7 @@ body {
     color: black;
 }
 
-ul {
-    padding: 0;
-}
-
-.info span {
-    margin-left: 5px;
-}
+ul { padding: 0 }
 
 .info li {
     display: flex;
@@ -182,4 +165,24 @@ ul {
     height: 25px;
     margin: 5px;
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .movies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+
+    .seat-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
